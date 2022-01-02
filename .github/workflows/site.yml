@@ -11,10 +11,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    name: Build ${{ github.event.inputs.project || ${{github.event.client_payload.project	}} || 'unknown'}}
-    concurrency: ${{ github.event.inputs.project || ${{github.event.client_payload.project	}} || 'unknown'}}
+    name: Build ${{ github.event.inputs.project || github.event.client_payload.project || 'unknown'}}
+    concurrency: ${{ github.event.inputs.project || github.event.client_payload.project || 'unknown'}}
     env:
-      PROJECT: ${{ github.event.inputs.project || ${{github.event.client_payload.project	}} || 'unknown'}}
+      PROJECT: ${{ github.event.inputs.project || github.event.client_payload.project || 'unknown'}}
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v2
