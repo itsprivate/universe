@@ -18,7 +18,7 @@ const siteMetadata = {
   menuLinks: [
     {
       name: "每周精选",
-      url: "/issues",
+      url: "/issues/",
     },
   ],
   subscriptions: [
@@ -60,7 +60,7 @@ const siteMetadata = {
       menuLinks: [
         {
           name: "Weekly Selection",
-          url: "/en/issues",
+          url: "/en/issues/",
         },
       ],
     },
@@ -73,7 +73,7 @@ const siteMetadata = {
       menuLinks: [
         {
           name: "每週精選",
-          url: "/zh-Hant/issues",
+          url: "/zh-Hant/issues/",
         },
       ],
     },
@@ -86,7 +86,7 @@ const siteMetadata = {
       menuLinks: [
         {
           name: "毎週の選択",
-          url: "/ja/issues",
+          url: "/ja/issues/",
         },
       ],
     },

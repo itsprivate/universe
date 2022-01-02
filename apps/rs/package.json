@@ -23,7 +23,7 @@
     "gatsby": "^4.4.0",
     "gatsby-plugin-google-gtag": "^4.4.0",
     "gatsby-plugin-manifest": "^4.4.0",
-    "gatsby-theme-buzzing": "^1.16.4",
+    "gatsby-theme-buzzing": "^1.16.6",
     "i18next": "^21.6.4",
     "ncp": "^2.0.0",
     "react": "^17.0.2",
