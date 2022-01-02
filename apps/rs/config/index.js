@@ -103,10 +103,19 @@ const siteMetadata = {
         //   prefetch: false,
         // },
       ],
-    }
+    },
   ],
 };
 
 module.exports = {
   siteMetadata,
+  patterns: [
+    "data/reddit-stocks/**",
+    "data/tweet-stocks/**",
+    "data/stocks-issues/**",
+    "data/*-placeholder/1.json",
+  ],
+  trackingIds: [
+    "G-9J4458T3RK", // Google Analytics / GA
+  ],
 };
