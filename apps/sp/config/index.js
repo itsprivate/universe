@@ -109,4 +109,8 @@ const siteMetadata = {
 
 module.exports = {
   siteMetadata,
+  patterns: ["data/*-placeholder/1.json", "data/reddit-projects/**"],
+  trackingIds: [
+    "G-8KK4G1DP1V", // Google Analytics / GA
+  ],
 };

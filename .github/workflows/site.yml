@@ -1,6 +1,11 @@
-name: Deploy
+name: Site
 on:
   workflow_dispatch:
+    inputs:
+      project:
+        description: "--project, package.json -> name"
+        required: true
+        default: "sp"
   repository_dispatch:
     types: [redeploy]
 jobs:
@@ -8,6 +13,8 @@ jobs:
     runs-on: ubuntu-latest
     name: Build
     concurrency: build
+    env:
+      PROJECT: ${{ github.event.inputs.project || 'sp'}}
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v2
@@ -25,13 +32,13 @@ jobs:
       - name: install
         run: "npm i"
       - name: Build
-        run: npm run build -w sp
+        run: npm -w ${{env.PROJECT}} exec gatsby build
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           personal_token: ${{ secrets.PERSONAL_TOKEN }}
-          publish_dir: ./apps/sp/public
+          publish_dir: ./apps/${{env.PROJECT}}/public
           force_orphan: false
           user_name: "github-actions[bot]"
           user_email: "github-actions[bot]@users.noreply.github.com"
-          external_repository: itsprivate/sp
+          external_repository: itsprivate/${{env.PROJECT}}
