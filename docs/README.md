@@ -11,3 +11,9 @@ npm -w sp gatsby start
 ```bash
 npm -w sp gatsby build
 ```
+
+## Update dependence
+
+```bash
+npm --workspaces i gatsby-theme-buzzing@latest
+```

@@ -11,8 +11,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    name: Build
-    concurrency: build
+    name: Build ${{ github.event.inputs.project || 'sp'}}
+    concurrency: ${{ github.event.inputs.project || 'sp'}}
     env:
       PROJECT: ${{ github.event.inputs.project || 'sp'}}
     steps:
