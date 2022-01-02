@@ -118,4 +118,8 @@ module.exports = {
   trackingIds: [
     "G-9J4458T3RK", // Google Analytics / GA
   ],
+  issueTypeName: ["StocksIssuesJson"],
+  disqus: {
+    shortname: "stock-market",
+  },
 };

@@ -1,5 +1,5 @@
 exports.getConfig = (project, config) => {
-  const { siteMetadata, patterns, trackingIds } = config;
+  const { siteMetadata, patterns, trackingIds, issueTypeName, disqus } = config;
   if (!siteMetadata || !patterns || !trackingIds) {
     throw new Error("Missing siteMetadata or patterns in config");
   }
@@ -49,9 +49,9 @@ exports.getConfig = (project, config) => {
         siteMetadata,
         tweetTypeName: ["TweetJson", "twitterStatusesUserTimelineMyTweet"],
         redditTypeName: ["RedditJson"],
-        issueTypeName: ["RedditTopIssuesJson"],
+        issueTypeName: issueTypeName || ["RedditTopIssuesJson"],
         localesPath: localesPath,
-        disqus: {
+        disqus: disqus || {
           shortname: "buzzingcc",
         },
       },
