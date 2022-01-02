@@ -5,16 +5,16 @@ on:
       project:
         description: "--project, package.json -> name"
         required: true
-        default: "sp"
+        default: "ttt"
   repository_dispatch:
     types: [redeploy]
 jobs:
   build:
     runs-on: ubuntu-latest
-    name: Build ${{ github.event.inputs.project || 'sp'}}
-    concurrency: ${{ github.event.inputs.project || 'sp'}}
+    name: Build ${{ env.PROJECT }}
+    concurrency: ${{ env.PROJECT }}
     env:
-      PROJECT: ${{ github.event.inputs.project || 'sp'}}
+      PROJECT: ${{ github.event.inputs.project || ${{github.event.client_payload.project	}} || 'tt'}}
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v2
