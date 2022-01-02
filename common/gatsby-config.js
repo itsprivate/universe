@@ -13,6 +13,8 @@ exports.getConfig = (project, config) => {
     localesPath =
       ".cache/gatsby-source-git/itsprivate/ts-test/RedditTop/i18n/i18next";
   }
+  const iconUrl = new URL(siteMetadata.iconUrl);
+  const iconPath = `static${iconUrl.pathname}`;
   let plugins = [];
   if (isDev) {
     // development not include the whole data
@@ -65,7 +67,7 @@ exports.getConfig = (project, config) => {
         background_color: `#f7f0eb`,
         theme_color: `#FF4500`,
         display: `standalone`,
-        icon: `src/images/icon.png`,
+        icon: iconPath,
         telegram: siteMetadata.telegram,
         telegram_chat_id: siteMetadata.telegram_chat_id,
         localize: siteMetadata.localize.map((item) => {

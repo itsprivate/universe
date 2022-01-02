@@ -1,0 +1,22 @@
+{
+  "name": "ask",
+  "private": "true",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {},
+  "dependencies": {
+    "@theowenyoung/gatsby-source-git": "^2.3.1",
+    "date-cli": "^1.1.0",
+    "gatsby": "^4.4.0",
+    "gatsby-plugin-google-gtag": "^4.4.0",
+    "gatsby-plugin-manifest": "^4.4.0",
+    "gatsby-theme-buzzing": "^1.16.4",
+    "i18next": "^21.6.4",
+    "ncp": "^2.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-i18next": "^11.15.2",
+    "trash-cli": "^5.0.0"
+  }
+}
