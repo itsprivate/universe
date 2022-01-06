@@ -8,7 +8,7 @@ exports.getConfig = (project, config) => {
     process.env.LOCAL !== "false";
 
   let localesPath =
-    ".cache/gatsby-source-git/itsprivate/ts/RedditTop/i18n/i18next";
+    ".cache/gatsby-source-git/itsprivate/ts-new/RedditTop/i18n/i18next";
   if (isDev) {
     localesPath =
       ".cache/gatsby-source-git/itsprivate/ts-test/RedditTop/i18n/i18next";
@@ -34,7 +34,7 @@ exports.getConfig = (project, config) => {
       resolve: `@theowenyoung/gatsby-source-git`,
       options: {
         name: `RedditTop`,
-        remote: `https://github.com/itsprivate/ts.git`,
+        remote: `https://github.com/itsprivate/ts-new.git`,
         branch: `main`,
         fetchOptions: ["--depth", 1],
         // Only import the docs folder from a codebase.
