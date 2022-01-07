@@ -10,15 +10,21 @@ const siteMetadata = {
   telegram_chat_id: "-1001406368978",
   iconUrl: "https://ask.buzzing.cc/avatar.png",
   menuLinks: [
-    // {
-    //   name: "每周精选",
-    //   url: "/issues",
-    // },
+    {
+      name: "关注推特@问Reddit",
+      url: "https://twitter.com/AskRedditZh",
+      external: true,
+    },
   ],
   subscriptions: [
     {
       name: "Twitter @buzzingcc",
       url: "https://twitter.com/buzzingcc",
+      external: true,
+    },
+    {
+      name: "Twitter @问Reddit",
+      url: "https://twitter.com/AskRedditZh",
       external: true,
     },
     {

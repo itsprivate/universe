@@ -20,8 +20,18 @@ const siteMetadata = {
       name: "每周精选",
       url: "/issues/",
     },
+    {
+      name: "推特",
+      url: "https://twitter.com/HackerNewsZh",
+      external: true,
+    },
   ],
   subscriptions: [
+    {
+      name: "Twitter @Hacker News 中文精选",
+      url: "https://twitter.com/HackerNewsZh",
+      external: true,
+    },
     {
       name: "Twitter @buzzingcc",
       url: "https://twitter.com/buzzingcc",

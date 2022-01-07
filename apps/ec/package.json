@@ -30,5 +30,8 @@
     "start:prod": "LOCAL=false npm start",
     "build:dev": "LOCAL=true gatsby build",
     "upstream": "git remote add upstream git@github.com:itsprivate/gatsby-buzzing-starter.git"
+  },
+  "devDependencies": {
+    "gatsby-cli": "^4.4.0"
   }
 }

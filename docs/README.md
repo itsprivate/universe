@@ -3,19 +3,23 @@
 ## Start single project
 
 ```bash
-npm -w sp gatsby start
+npm -w sp exec gatsby develop
 ```
 
 ## Build single project
 
 ```bash
-npm -w sp gatsby build
+npm -w sp exec gatsby build
 ```
 
 ## Update dependence
 
 ```bash
 npm --workspaces i gatsby-theme-buzzing@latest
+```
+
+```bash
+npm --workspaces -D i gatsby-cli@latest
 ```
 
 ## Clean and build

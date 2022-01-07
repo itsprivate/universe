@@ -17,15 +17,22 @@ const siteMetadata = {
   telegram_chat_id: "-1001406368978",
   iconUrl: "https://news.buzzing.cc/avatar.png",
   menuLinks: [
-    // {
-    //   name: "每周精选",
-    //   url: "/issues",
-    // },
+    {
+      name: "关注推特@国外新闻 Bot",
+      external: true,
+      url: "https://twitter.com/NewsBotZh",
+    },
   ],
   subscriptions: [
     {
       name: "Twitter @buzzingcc",
       url: "https://twitter.com/buzzingcc",
+      external: true,
+    },
+
+    {
+      name: "Twitter @国外新闻 Bot",
+      url: "https://twitter.com/NewsBotZh",
       external: true,
     },
     {
